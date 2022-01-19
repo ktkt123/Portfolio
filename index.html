@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Programming STEM Project</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="center container">
+      <h3>教えて！ Steven先生！！</h3>
+      
+      <div class="balloon">
+        <div class="faceicon">
+          <img src="image/Steven.jpg" class="img1">
+        </div>
+        <div class="chatting">
+          <div class="says">
+            <p>I'm going to calculate the 3✖️3 matrix into determinants. Let's check the answer. Blank spaces will automatically be filled with 0.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="AllCells">
+      <p class="cells">
+         <input type="string" class="input" id="a11">
+         <input type="string" class="input" id="a12">
+         <input type="string" class="input" id="a13">
+      </p>
+      <p class="cells">
+         <input type="string" class="input" id="a21">
+         <input type="string" class="input" id="a22">
+         <input type="string" class="input" id="a23">
+      </p>
+      <p class="cells">
+         <input type="string" class="input" id="a31">
+         <input type="string" class="input" id="a32">
+         <input type="string" class="input" id="a33">
+      </p>
+      </div>
+
+      <p>
+         = <span id="output1" class="answer"></span>
+      </p>
+
+      <p>
+        <input type="button" id="buttonCalculate" value="Calculate" class="button">
+      </p>
+      
+    </div>
+    <script src="script.js"></script>
+  </body>
+
+</html>

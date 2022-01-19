@@ -1,0 +1,126 @@
+/* styles for layout */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  width: 550px;
+}
+
+/* styles for colors and fonts */
+.answer {
+  color: red;
+  font-weight: bold;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  margin-left: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.input{
+  width: 30px;
+}
+
+.cells{
+  margin: 1px;
+}
+
+.AllCells {
+	padding: 10px;
+	position: relative;
+  text-align:center;
+  padding-right: 380px;
+}
+.AllCells::before, .AllCells::after {
+	content: '';
+	width: 10px;
+	height: 80%;
+  position: absolute;
+}
+.AllCells::before {
+	border-left: solid 2px rgb(100, 100, 100);
+	border-top: solid 2px rgb(100, 100, 100);
+	border-bottom: solid 2px rgb(100, 100, 100);
+	top: 9px;
+	left: 10px;
+}
+.AllCells::after {
+	border-right: solid 2px rgb(100, 100, 100);
+	border-top: solid 2px rgb(100, 100, 100);
+	border-bottom: solid 2px rgb(100, 100, 100);
+	top: 9px;
+	right: 380px;
+}
+
+
+
+
+
+.balloon {
+  width: 100%;
+  margin: 1.5em 0;
+  overflow: hidden;
+}
+
+.balloon .faceicon {
+  float: left;
+  margin-right: -90px;
+  width: 80px;
+}
+
+.balloon .faceicon img{
+  width: 100%;
+  height: auto;
+  border: solid 3px #d7ebfe;
+  border-radius: 50%;
+}
+
+.balloon .chatting {
+  width: 100%;
+}
+
+.says {
+  display: inline-block;
+  position: relative; 
+  margin: 5px 0 0 105px;
+  padding: 17px 13px;
+  border-radius: 12px;
+  background: #d7ebfe;
+}
+
+.says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 18px; 
+  left: -24px;
+  border: 12px solid transparent;
+  border-right: 12px solid #d7ebfe;
+}
+
+.says p {
+  margin: 0;
+  padding: 0;
+}
